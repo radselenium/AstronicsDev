@@ -1,0 +1,33 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlserver"
+  url      = env("DATABASE_URL")
+}
+
+
+model User {
+  id    Int     @id @default(autoincrement())
+  email String  @unique
+  name  String?
+  password String
+}
+
+
+model messageTracing {
+  id               String    @id(map: "PK__messageT__DED88B1CE6B4743A") @default(dbgenerated("newsequentialid()"), map: "DF__messageTrac___id__5CD6CB2B") @map("_id") @db.UniqueIdentifier
+  messageID        String?   @db.NVarChar(50)
+  xmlMessageName   String?   @db.NVarChar(255)
+  xmlMessageSource String?   @db.NVarChar(50)
+  fromCageCode     String?   @db.NVarChar(50)
+  toCageCode       String?   @db.NVarChar(50)
+  messageType      String?   @db.NVarChar(50)
+  messageDirection String?   @db.NVarChar(50)
+  receivedDate     DateTime? @db.DateTime
+  status           String?   @db.NVarChar(50)
+  documentID       String?   @db.NVarChar(50)
+  processedDate    DateTime? @db.DateTime
+  errorInfo        String?   @db.NVarChar(Max)
+}
