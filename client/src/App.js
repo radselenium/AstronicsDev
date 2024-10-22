@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Dashboard from 'components/dashboard';
+import Dashboard from './components/dashboard';
 import MessageTracing from './components/messageTracing';
 import Login from './components/login/Login';
 
