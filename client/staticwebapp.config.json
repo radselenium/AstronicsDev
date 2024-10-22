@@ -5,10 +5,7 @@
       "route": "/dashboard"
     },
     {
-      "route": "/messagetracing",
-      "allowedRoles": [
-        "authenticated"
-      ]
+      "route": "/messagetracing"
     }
   ],
   "navigationFallback": {
