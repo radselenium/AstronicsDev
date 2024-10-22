@@ -1,0 +1,7 @@
+{
+"routes": [{"route":"/{*all}",  
+// This matches all routes
+"serve":"/index.html",
+// Serve index.html for all routes
+"statusCode": 200}]
+}
