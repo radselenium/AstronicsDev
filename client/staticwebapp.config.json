@@ -2,9 +2,6 @@
   "trailingSlash": "auto",
   "routes": [
     {
-      "route": "/dashboard"
-    },
-    {
       "route": "/messagetracing"
     }
   ],
