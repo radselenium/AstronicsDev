@@ -1,10 +1,5 @@
 {
   "trailingSlash": "auto",
-  "routes": [
-    {
-      "route": "/messagetracing"
-    }
-  ],
   "navigationFallback": {
     "rewrite": "index.html",
     "exclude": [
